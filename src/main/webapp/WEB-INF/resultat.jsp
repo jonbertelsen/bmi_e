@@ -18,25 +18,13 @@
 
     <img src="images/bmi_skala.png" class="img-fluid"/>
 
-    <h1 class="mt-4 text-center">BMI-beregner</h1>
+    <h1 class="mt-4 text-center">BMI-beregner: resultat</h1>
 
-    <form action="FrontController" method="get">
 
-        <input type="hidden" name="taget" value="resultat"/>
-
-        <div class="form-group">
-            <label for="height">Indtast højde i cm:</label>
-            <input id="height" name="height" type="text" class="form-control"  aria-describedby="heightHelp">
-            <small id="heightHelp" class="form-text text-muted">Du skal ikke være flov over din vægt makker</small>
-        </div>
-        <div class="form-group">
-            <label for="weight">Indtast vægt i kg:</label>
-            <input id="weight" name="weight" type="text" class="form-control" >
-        </div>
 
         <button type="submit" class="btn btn-primary">Beregn vægt</button>
 
-    </form>
+
 
 </div>
 
