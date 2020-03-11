@@ -28,28 +28,33 @@
             <table class="table">
                 <tr>
                     <td>Din højde</td>
-                    <td>180 cm</td>
+                    <td>${requestScope.height} cm</td>
                 </tr>
                 <tr>
                     <td>Din vægt</td>
-                    <td>70 kg</td>
+                    <td>${requestScope.weight} kg</td>
                 </tr>
                 <tr>
                     <td>BMI</td>
-                    <td>22,64</td>
+                    <td>${requestScope.bmi}</td>
                 </tr>
                 <tr>
                     <td>BMI kategori</td>
-                    <td>Du er normalvægtig</td>
+                    <td>${requestScope.kategori}</td>
                 </tr>
             </table>
+
+            <!-- Måske er dette ikke en god idé, men det kan være praktisk -->
+
+            <a href="FrontController?taget=redirect&destination=index">Gå til forsiden</a>
+
+            <%=Util.BmiHelper.calcBMI(190.0, 85.0) %>
+
+
         </div>
         <div class="col-lg-4">
         </div>
     </div>
-
-
-
 
 </div>
 

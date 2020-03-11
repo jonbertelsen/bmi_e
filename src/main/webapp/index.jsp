@@ -26,7 +26,7 @@
         </div>
         <div class="col-lg-4">
 
-            <form action="FrontController" method="get">
+            <form action="FrontController" method="post">
 
                 <input type="hidden" name="taget" value="resultat"/>
 
@@ -44,6 +44,25 @@
                 <button type="submit" class="btn btn-primary">Beregn vægt</button>
 
             </form>
+
+            <%
+                String role;
+                if (session.getAttribute("role") != null) {
+                    role = (String) session.getAttribute("role");
+                    out.print("Rolle: " + role);
+                } else
+                {
+                    out.print("Du er ikke logget på makker");
+                }
+            %>
+
+            <h1>Er jeg logget på?</h1>
+            <h3>${requestScope.user_status}</h3>
+
+
+
+
+            <a href="FrontController?taget=redirect&distination=index">I feel lucky today</a>
 
         </div>
         <div class="col-lg-4">
