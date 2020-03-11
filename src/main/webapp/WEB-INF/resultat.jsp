@@ -21,8 +21,33 @@
     <h1 class="mt-4 text-center">BMI-beregner: resultat</h1>
 
 
+    <div class="row mt-4">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-4">
+            <table class="table">
+                <tr>
+                    <td>Din højde</td>
+                    <td>180 cm</td>
+                </tr>
+                <tr>
+                    <td>Din vægt</td>
+                    <td>70 kg</td>
+                </tr>
+                <tr>
+                    <td>BMI</td>
+                    <td>22,64</td>
+                </tr>
+                <tr>
+                    <td>BMI kategori</td>
+                    <td>Du er normalvægtig</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4">
+        </div>
+    </div>
 
-        <button type="submit" class="btn btn-primary">Beregn vægt</button>
 
 
 
