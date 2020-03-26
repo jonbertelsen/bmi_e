@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bmi_e_web" />
-        <module name="ProjektSkabelon-master" />
         <module name="prejektSkabelon" />
+        <module name="ProjektSkabelon-master" />
         <module name="Projektskabelon-master" />
         <module name="Projektskabelon" />
       </profile>

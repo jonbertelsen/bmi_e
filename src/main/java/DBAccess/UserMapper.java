@@ -9,12 +9,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
- The purpose of UserMapper is to...
-
- @author kasper
+ * Indeholder metoder der opererer på databasen. Specielt tabellen user.
+ * @author jon
+ * @version 0.9
+ * @since 2020-20-03-14
  */
 public class UserMapper {
 
+    /**
+     *
+     * @param user object contains name, email, and password
+     * @throws LoginSampleException med sql-fejl
+     */
     public static void createUser( User user ) throws LoginSampleException {
         try {
             Connection con = Connector.connection();
@@ -33,6 +39,13 @@ public class UserMapper {
         }
     }
 
+    /**
+     *
+     * @param email
+     * @param password
+     * @return User object with logged in user - or null
+     * @throws LoginSampleException
+     */
     public static User login( String email, String password ) throws LoginSampleException {
         try {
             Connection con = Connector.connection();
